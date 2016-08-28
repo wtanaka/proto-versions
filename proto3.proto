@@ -1,0 +1,10 @@
+syntax = "proto3";
+service MyService3 {
+  rpc DoStuff(MyRequest3) returns (MyResponse3);
+}
+message MyRequest3 {
+  int32 myfield = 1;
+}
+message MyResponse3 {
+  int32 myresult = 1;
+}

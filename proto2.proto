@@ -1,0 +1,10 @@
+syntax = "proto2";
+service MyService2 {
+  rpc DoStuff(MyRequest2) returns (MyResponse2);
+}
+message MyRequest2 {
+  required int32 myfield = 1;
+}
+message MyResponse2 {
+  required int32 myresult = 1;
+}

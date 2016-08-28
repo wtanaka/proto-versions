@@ -1,0 +1,9 @@
+service MyService {
+  rpc DoStuff(MyRequest) returns (MyResponse);
+}
+message MyRequest {
+  required int32 myfield = 1;
+}
+message MyResponse {
+  required int32 myresult = 1;
+}
